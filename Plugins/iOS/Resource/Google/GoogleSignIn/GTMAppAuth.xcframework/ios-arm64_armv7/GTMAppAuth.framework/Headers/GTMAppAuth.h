@@ -21,8 +21,9 @@
 
 #if TARGET_OS_TV
 #elif TARGET_OS_WATCH
-#elif TARGET_OS_IOS || TARGET_OS_MAC
-#import "GTMKeychain.h"
+#elif TARGET_OS_IOS
+#import "GTMOAuth2KeychainCompatibility.h"
+#elif TARGET_OS_MAC
 #import "GTMOAuth2KeychainCompatibility.h"
 #else
 #warn "Platform Undefined"
